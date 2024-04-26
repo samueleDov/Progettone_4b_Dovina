@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLActor</id>
+    <coordinates>
+      <x>1010</x>
+      <y>430</y>
+      <w>100</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>passeggero</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1150</x>
+      <y>200</y>
+      <w>260</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>possibilità di scegliere tra 1 classe
+e seconda classe</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1160</x>
+      <y>350</y>
+      <w>230</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>se i posti nella classe scelta 
+sono tutti occupati può scegliere 
+l'altra classe o aspettare tre ore 
+se il volo e pieno</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1190</x>
+      <y>530</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>elimina prenotazione</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1200</x>
+      <y>470</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Modifica prenotazione</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>1180</x>
+      <y>290</y>
+      <w>200</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>visionare disponibilità dei posti</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1130</x>
+      <y>130</y>
+      <w>330</w>
+      <h>510</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>460</y>
+      <w>160</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;140.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>460</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;150.0;30.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>390</y>
+      <w>130</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;80.0;110.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>300</y>
+      <w>150</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;170.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>230</y>
+      <w>120</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;240.0;100.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>130</y>
+      <w>450</w>
+      <h>430</h>
+    </coordinates>
+    <panel_attributes>aereo
+--
+-N_MAX_POSTI:int=20 
+-elencoPrenotazioni:Prenotazione[] 
+-nPostiPresenti:int 
+--
++Aereo() 
++getNMaxPosti():int 
++getNPostiPresenti()int 
++aggiungiPosto(posto:Posto):int //1--&gt;prima classe, 2--&gt;seconda classe 
++
++eliminaPosto(PostoDaEliminare:String):int 
++eliminaPostoPosizione (posizione:int)
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>610</x>
+      <y>130</y>
+      <w>380</w>
+      <h>430</h>
+    </coordinates>
+    <panel_attributes>Prenotazione
+--
+-nome: String 
+-età: String 
+ 
+ 
+-- 
++Prenotazione(nome: String,età:String, 
+,anno:int) 
++Posto(Posto:Libro)
++getnome():String 
++getEta():String 
+ 
++setNome(nome:String) 
++setEta(eta:String) 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>440</x>
+      <y>310</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+</diagram>
