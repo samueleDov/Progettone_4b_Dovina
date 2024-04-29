@@ -3,3 +3,4 @@
 classe menu, classe prenotazioni 
 24/4/2024 non ho fatto niente perchè dovevo finire di copiare l'altro progetto
 26/4/2024 prima creazione diagramma dei casi d'uso e tabella dei requisiti
+29/4/2024 inizzializzazione delle due classi aereo e prenotazione
