@@ -13,15 +13,36 @@ public class Prenotazione {
     private String eta; 
     private boolean prenotato;
 
-    public Prenotazione(String nome, String eta) {
+    public Prenotazione(String nome, String eta, boolean prenotato) {
         this.nome = nome;
         this.eta = eta; 
         this.prenotato = false; // Inizialmente la prenotazione è vuota
     } 
+    public Prenotazione()
+    {
+        nome="";
+        eta="";
+        prenotato=false;
+    } 
 
+    public boolean getPrenotato() {
+        return prenotato;
+    }
+
+    public void setPrenotato(boolean prenotato) {
+        this.prenotato = prenotato;
+    }
+    public Prenotazione(Prenotazione l)
+    {
+        setNome(l.getNome());
+        setEta(l.getEta());
+        setPrenotato(l.getPrenotato());
+    }
     public String getNome() {
         return nome;
     }
+
+  
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -52,10 +73,12 @@ public class Prenotazione {
             System.out.println("Non ci sono prenotazioni da confermare per " + nome);
         }
     }
+
     @Override
     public String toString() {
-        return "Prenotazione{" + "nome=" + nome + ", eta=" + eta + '}';
+        return "Prenotazione{" + "nome=" + nome + ", eta=" + eta + ", prenotato=" + prenotato + '}';
     }
+  
     
     
 }
